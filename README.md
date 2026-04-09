@@ -1,81 +1,71 @@
-# Análisis de base de datos de libros - Proyecto SQL
+# SQL Analysis of Book Platform Data
 
-## Descripción del proyecto
-Este proyecto analiza una base de datos de una plataforma de libros digitales con el objetivo de generar insights que apoyen la definición de una propuesta de valor para un nuevo producto.
+## Project Description
+This project explores a relational database from a book platform to generate insights that support the development of a competitive product.
 
-El análisis se enfoca en entender el catálogo disponible, el comportamiento de los usuarios y la relación entre popularidad, calidad y engagement.
+The analysis focuses on understanding content, user behavior, and the relationship between popularity and perceived quality.
 
 ---
 
-## Objetivo
-Explorar la base de datos mediante consultas SQL para identificar patrones relevantes en libros, autores, editoriales y comportamiento de usuarios, con el fin de generar recomendaciones estratégicas para el desarrollo de un producto competitivo.
+## Objective
+Use SQL queries to analyze books, authors, publishers, and user behavior to generate actionable product insights.
 
 ---
 
 ## Dataset
-La base de datos incluye las siguientes tablas:
+The database includes:
 
-- books: información de libros  
-- authors: datos de autores  
-- publishers: editoriales  
-- ratings: calificaciones de usuarios  
-- reviews: reseñas de usuarios  
+- books  
+- authors  
+- publishers  
+- ratings  
+- reviews  
 
 ---
 
-## Herramientas utilizadas
+## Tools Used
 - SQL  
-- PostgreSQL / entorno de consultas  
-- Análisis exploratorio de datos  
+- PostgreSQL  
 
 ---
 
-## Proceso de análisis
+## Analysis Process
 
-Se desarrollaron consultas SQL para responder preguntas clave:
-
-- Libros publicados después del año 2000  
-- Número de reseñas y calificación promedio por libro  
-- Editorial con mayor número de publicaciones relevantes  
-- Autor con mejor calificación promedio (considerando volumen)  
-- Nivel de participación de usuarios activos  
+- Books published after 2000  
+- Reviews and average ratings per book  
+- Publisher with the highest number of relevant books  
+- Author with the highest average rating (with sufficient volume)  
+- User engagement analysis  
 
 ---
 
-## Insights clave
+## Key Insights
 
-- El catálogo incluye una alta proporción de libros contemporáneos (819 publicados después del 2000).  
-- La popularidad de un libro no siempre está alineada con su calificación.  
-- Penguin Books lidera en volumen de publicaciones relevantes.  
-- J.K. Rowling destaca por alto volumen y consistencia en calificaciones.  
-- Existe baja proporción de reseñas en comparación con calificaciones.  
-
----
-
-## Recomendaciones
-
-- Priorizar contenido que combine alta calificación y volumen de interacción.  
-- Diferenciar entre popularidad y calidad en sistemas de recomendación.  
-- Incentivar la generación de reseñas para mejorar el engagement.  
-- Destacar autores con alto volumen de valoraciones confiables.  
+- A significant portion of the catalog consists of modern books (post-2000).  
+- Popularity does not always correlate with user satisfaction.  
+- Penguin Books leads in volume of relevant publications.  
+- J.K. Rowling stands out due to high rating consistency and volume.  
+- Active users write fewer reviews compared to ratings, indicating a gap in engagement.  
 
 ---
 
-## Conclusión
+## Recommendations
 
-El análisis demuestra que el valor del catálogo no depende únicamente del volumen de contenido, sino de la calidad percibida y la interacción de los usuarios. Estos hallazgos permiten orientar el desarrollo de un producto más competitivo y centrado en la experiencia del usuario.
-
----
-
-## Limitaciones
-
-- No se analizaron variables externas como tendencias del mercado o comportamiento temporal.  
-- El análisis se basa únicamente en datos históricos disponibles.  
+- Prioritize books with both high ratings and engagement  
+- Differentiate between popularity and quality in recommendations  
+- Encourage user-generated reviews to increase engagement  
+- Highlight authors with consistent high ratings  
 
 ---
 
-## Próximos pasos
+## Conclusion
 
-- Implementar modelos de recomendación basados en comportamiento del usuario.  
-- Analizar segmentación de usuarios por preferencias.  
-- Integrar datos adicionales para enriquecer el análisis.  
+The analysis highlights the importance of balancing content volume with quality and user interaction to build a competitive product.
+
+---
+
+## Next Steps
+
+- Develop recommendation systems  
+- Analyze user segmentation  
+- Incorporate additional behavioral data  
